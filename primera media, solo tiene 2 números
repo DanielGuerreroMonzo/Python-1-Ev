@@ -1,0 +1,10 @@
+# MEDIAS
+def media():
+    #inicializo las variables
+    n1=0
+    n2=0
+    n1=int(input("numero 1: "))
+    n2=int(input("numero 2: "))
+    n3=suma=n1+n2
+    n4=media=n3/2
+    print(n4)
