@@ -1,0 +1,7 @@
+a=8
+b=6
+c=a+b
+print("Cuánto es ")
+print("a+b")
+print("EL RESULTADO ES")
+print(c)
