@@ -1,0 +1,11 @@
+import time
+def cuentaatras():
+    print("EMPIEZA LA CUENTA DE PAR EN PAR HASTA EL 100")
+    numerofinal=0
+    for contar in range(0,101,2):
+        print (contar)
+        time.sleep(0.1)
+        numerofinal+=contar
+    print("La suma de todos estos números es", numerofinal)
+    print("FIN")
+cuentaatras()
