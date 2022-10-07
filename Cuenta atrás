@@ -1,0 +1,8 @@
+import time
+def cuentaatras():
+    print("EMPIEZA LA CUENTA ATRÁS")
+    for contar in range(10,0,-1):
+        print (contar)
+        time.sleep(1)
+    print("FIN")
+cuentaatras()
