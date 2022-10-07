@@ -1,0 +1,7 @@
+while True:
+    respuesta=int(input("¿Qué número quieres saber si es primo? -->"))
+    
+    if respuesta % 2 == 0:
+        print("PAR")
+    else:
+        print("IMPAR")
