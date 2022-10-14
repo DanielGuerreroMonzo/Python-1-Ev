@@ -1,0 +1,15 @@
+def summaparimpar():
+    sumapar=0
+    sumaimpar=0
+    for cont in range (1,5):
+        num=int(input("Dame un número --> "))
+        if(num%2==0):
+            print("ES PAR")
+            sumapar=sumapar + num
+        if(num%2!=0):
+            print("ES IMPAR")
+            sumaimpar=sumaimpar + num
+    print("La summa de los impares es --> " +str(sumaimpar))
+    print("La summa de los pares es --> " +str(sumapar))
+
+summaparimpar()
