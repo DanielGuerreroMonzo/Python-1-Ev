@@ -1,0 +1,17 @@
+nom=input("Dime tu nombre ---> ")
+def saludar():
+
+    hora=int(input("Dime una hora ---> "))
+    if(hora<=0 or hora>=24):
+        print("Hola",nom,"podrías aprender que las horas no pueden ser ni menores a 24 ni mayores por favor")
+    else:
+        if(hora>=6 and hora<=12):
+            print("Buenos días",nom)
+        else:
+            if(hora>12 and hora<20):
+                print("Buenas tardes", nom)
+            else:
+                print("Buenas noches", nom)
+                
+        
+saludar()
