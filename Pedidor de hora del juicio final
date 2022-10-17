@@ -1,0 +1,14 @@
+hora=int(input("¿Cuál crees que será la hora del juicio final? (1-24) --> "))
+while True:
+    if hora<=6 or (hora>20 and hora<=24):
+        print("Correcto, sucederá en medio de la noche, mientras todos duermen, los ángeles caerán y rescatarán a los inocentes antes de que las fauces del infierno se traguen a los pecadores")
+        break
+    if hora>6 and hora<=13:
+        print("Correcto, será durante la mañana mientras todos se despiertan y se dirigen hacia su trabajo, los inocentes recibirán la bendición de Dios y serán llevados por su mano hacia el paraiso, mientras que los pecaminosos serán arrastrados a un lugar de eterno tormento por demonios")
+        break
+    if hora>13 and hora<=20:
+        print("Correcto, será durante la tarde mientras todos trabajan o están comiendo, los inocentes serán ascendidos al reindo de Dios y los pecadores serán engullidos por las llamas de Satanás")
+        break
+    if hora>24:
+        print("Aunque es verdad que cuando suceda, todos los conceptos que entendemos sobre el tiempo serán deformados, seguirá existiendo un momento real en el que sí empezó el final")
+    
