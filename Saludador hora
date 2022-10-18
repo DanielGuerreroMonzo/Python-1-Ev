@@ -1,0 +1,26 @@
+nom=input("Dime tu nombre ---> ")
+seguir=True
+def saludar():
+    seguir=True
+    while seguir==True:
+        hora=int(input("Dime una hora ---> "))
+        if(hora<=0 or hora>=24):
+            print("Hola",nom,"podrías aprender que las horas no pueden ser ni menores a 0, ni mayores a 24 por favor")
+            seguir=True
+        
+        else:
+            if(hora>=6 and hora<=12):
+                print("Buenos días",nom)
+                seguir=False
+            else:
+                if(hora>12 and hora<20):
+                    print("Buenas tardes", nom)
+                    seguir=False
+
+                else:
+                    print("Buenas noches", nom)
+                    seguir=False
+  
+        
+saludar()
+
