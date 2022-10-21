@@ -1,0 +1,33 @@
+#banco
+print("Bienvenido al ANTONIOCOIN BANK")
+b="cosa"
+MONEY=100
+CARTERA=20
+for b in "cosa":
+    print("-------")
+    INGR=0
+    RET=0
+    print("TIENES ", MONEY," EN EL BANCO")
+    print("TIENES ", CARTERA," EN LA CARTERA")
+    print("-------")
+    R=input("Qué deseas hacer (RETIRAR/INGRESAR) ---> ")
+    print("-------")
+    if R=="INGRESAR":
+        INGR=int(input("Cuánto quieres ingresar --> "))
+        if CARTERA<0 or INGR>CARTERA:
+            print("No tienes tanto dinero en la cartera")        
+        if CARTERA>0 and RET<CARTERA:
+            MONEY+=RET
+            CARTERA-=RET 
+
+    if R=="RETIRAR":
+        RET=int(input("Cuánto quieres retirar en el banco --> "))
+        if MONEY<0 or RET>MONEY:
+            print("No tienes tanto dinero")        
+        if MONEY>0 and RET<MONEY:
+            CARTERA+=RET
+            MONEY-=RET 
+
+    if R!="RETIRAR" and R!="INGRESAR":
+        print("Te he pedido que respondas RETIRAR o INGRESAR, no que me digas ¿", R,"?")
+        print("Te vuelvo a preguntar, que no me apetece echarte del banco por tu inhabilidad de leer un texto")
