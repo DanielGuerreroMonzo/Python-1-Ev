@@ -1,0 +1,10 @@
+# Defina una función que reciba un NIF y devuelva 0 si la letra es correcta y 1 si no lo es. 
+# Metes 8 numeros, luego la letra
+# Se divide el número entero del DNI entre 23. Cogemos el resultado sin decimales y lo volvemos a multiplicar por 23. Y a lo obtenido se resta del número del dni. 
+DNI=0
+
+DNI=int(input("Cuál es tu DNI --> "))
+DNI1= int(DNI/23)
+DNI2= DNI/23
+DNIF=DNI2-DNI1
+print(DNI2, DNIF)
