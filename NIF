@@ -4,7 +4,7 @@
 DNI=0
 
 DNI=int(input("Cuál es tu DNI --> "))
-DNI1= int(DNI/23)
-DNI2= DNI/23
-DNIF=DNI2-DNI1
-print(DNI2, DNIF)
+DNI1= int(DNI%23)
+lista=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','x','Y','Z']
+print('La letra del DNI es: ', lista[DNI1])
+print('EL COCIENTE ES: ',DNI1)
