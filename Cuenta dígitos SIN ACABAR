@@ -1,0 +1,14 @@
+def bucle():
+    po=input("Te demostraré que sé contar cuantas letras tiene una palabra --> ")
+    for cont in range (0, len(po)):
+        print(po[cont]+"")
+        print("Esa palabra tiene "+str(cont+1)+" dígitos")
+bucle()
+
+def bucle():
+    po=input("Te demostraré que sé contar cuantas letras tiene una palabra --> ")
+    for cont in range (0, len(po)):
+        print(po[cont]+"")
+        print(str(cont+1))
+    print("Esa palabra tiene "+cont+" dígitos")
+bucle()
