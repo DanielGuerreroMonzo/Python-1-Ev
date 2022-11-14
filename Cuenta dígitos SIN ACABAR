@@ -1,14 +1,16 @@
-def bucle():
-    po=input("Te demostraré que sé contar cuantas letras tiene una palabra --> ")
-    for cont in range (0, len(po)):
-        print(po[cont]+"")
-        print("Esa palabra tiene "+str(cont+1)+" dígitos")
-bucle()
+def vocal(letra):
+    respuesta=False
+    if(letra=='a' or letra=='e' or letra=='i' or letra=='o' or letra=='u'):
+        respuesta=True
+    return(respuesta)
 
-def bucle():
-    po=input("Te demostraré que sé contar cuantas letras tiene una palabra --> ")
-    for cont in range (0, len(po)):
-        print(po[cont]+"")
-        print(str(cont+1))
-    print("Esa palabra tiene "+cont+" dígitos")
-bucle()
+def deletreo():
+    palabra=input("Dime una palabra: ")
+    cuentavocales=0
+    for cont in range(0,len(palabra)):
+        print(palabra[cont]+ ' ')
+        if(vocal(palabra[cont])==True):
+            cuentavocales=cuentavocales+1
+    print("Tiene "+str(cuentavocales) +" vocales")
+
+deletreo()
