@@ -1,11 +1,11 @@
 
 while True:
-    asig=input("Dime las tres asignaturas que vas a cursar --> ")
-    junto = asig.split(" ")
-    primera, segunda, tercera = junto
-    print(primera)
-    print(segunda)
-    print(tercera)
-    print(junto)
-    n1=int(input("Dime tu nota en "+primera+" --> "))
-    print(n1)
+    carrera=input("Dime las tres asignaturas que vas a cursar --> ")
+    juntoc = carrera.split(" ")
+    primerac, segundac, tercerac = juntoc
+    
+   # n1=int(input("Dime tu nota en "+primera+" --> "))
+    asignatura=input("Dime las cuatro notas de la EVAU de inglés, lengua, historia y mates --> ")
+    juntoa = asignatura.split(" ")
+    ingles, lengua, historia, mates = juntoa
+    
