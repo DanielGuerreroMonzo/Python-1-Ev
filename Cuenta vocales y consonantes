@@ -18,9 +18,9 @@ def deletreo():
     for cont in range(0,len(palabra)):
         print(palabra[cont]+ " ")
         if(esVocal(palabra[cont])==True):
-            cuentavocales=cuentavocales+1
+            cuentavocales+=1
         if(esConsonante(palabra[cont])==True):
-            cuentaconsonantes=cuentaconsonantes+1
+            cuentaconsonantes+=1
     print("Tiene "+str(cuentavocales) +" vocales")
     print("Tiene "+str(cuentaconsonantes) + " consonantes")
         
