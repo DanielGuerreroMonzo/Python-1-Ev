@@ -8,4 +8,11 @@ while True:
     asignatura=input("Dime las cuatro notas de la EVAU de inglés, lengua, historia y mates --> ")
     juntoa = asignatura.split(" ")
     ingles, lengua, historia, mates = juntoa
-    
+    if ingles<4:
+        ingles=0
+    if lengua<4:
+        lengua=0
+    if historia<4:
+        historia=0        
+    if mates<4:
+        mates=0
