@@ -1,13 +1,15 @@
-
 while True:
     carrera=input("Dime las tres asignaturas que vas a cursar --> ")
     juntoc = carrera.split(" ")
     primerac, segundac, tercerac = juntoc
     
    # n1=int(input("Dime tu nota en "+primera+" --> "))
-    asignatura=input("Dime las cuatro notas de la EVAU de inglés, lengua, historia y mates --> ")
-    juntoa = asignatura.split(" ")
-    ingles, lengua, historia, mates = juntoa
+    print("Dime las cuatro notas de la EVAU de inglés, lengua, historia y mates")
+    ingles=input("Ingles --> ")
+    lengua=input("Lengua --> ")
+    historia=input("Historia --> ")
+    mates=input("Mates --> ")
+
     if ingles<4:
         ingles=0
     if lengua<4:
