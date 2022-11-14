@@ -1,7 +1,6 @@
-
 def esVocal(letra):
     respuesta=False
-    if(letra=="a" or letra=="e" or letra=="i" or letra=="o" or letra=="u"):
+    if(letra in ["a","e","i","o","u"]):
         respuesta=True
     return(respuesta)
     
@@ -25,5 +24,3 @@ def deletreo():
     print("Tiene "+str(cuentaconsonantes) + " consonantes")
         
 deletreo()
-
- 
