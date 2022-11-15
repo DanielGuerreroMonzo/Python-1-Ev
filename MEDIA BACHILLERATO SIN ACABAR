@@ -18,24 +18,27 @@ while True:
         historia=0        
     if mates<4:
         mates=0
-    NMB=int(input("Cuál es tu media en Bachillerato --> "))
+    NMB=int(input("Cuál es tu media de Bachillerato --> "))
     NME=((ingles+lengua+historia+mates)/4)
     NA = (0.4 * NME) + (0.6 * NMB)
-        if NA<5:
-            print("SUSPENSO")
-            break
-        else:
-            print("Tu nota de acceso es ", NA)
+    if NA<5:
+        print("SUSPENSO")
+        break
+    else:
+        print("Tu nota de acceso es ", NA)
     FV1=int(input("Cuál es tu nota de la primera asignatura voluntaria --> "))
-        if FV1<5:
-            FV1=0
+    if FV1<5:
+        FV1=0
     FV2=int(input("Cuál es tu nota de la segunda asignatura voluntaria --> "))
-        if FV2<5:
-            FV2=0
+    if FV2<5:
+        FV2=0
     a1=1/10
     a2=1/10
     a1=int(input("Cual es la ponderación de la primera asignatura --> "))
     a2=int(input("Cual es la ponderación de la segunda asignatura --> "))
     NAD= NA+(FV1*a1)+(FV2*a2)
+    if NAD>14:
+        print("Tu nota de admisión es mayor a 14, algo a salido mal")
+        break
     print("Tu nota de asmisión es ",NAD)
     
