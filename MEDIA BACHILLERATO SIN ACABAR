@@ -26,3 +26,16 @@ while True:
             break
         else:
             print("Tu nota de acceso es ", NA)
+    FV1=int(input("Cuál es tu nota de la primera asignatura voluntaria --> "))
+        if FV1<5:
+            FV1=0
+    FV2=int(input("Cuál es tu nota de la segunda asignatura voluntaria --> "))
+        if FV2<5:
+            FV2=0
+    a1=1/10
+    a2=1/10
+    a1=int(input("Cual es la ponderación de la primera asignatura --> "))
+    a2=int(input("Cual es la ponderación de la segunda asignatura --> "))
+    NAD= NA+(FV1*a1)+(FV2*a2)
+    print("Tu nota de asmisión es ",NAD)
+    
