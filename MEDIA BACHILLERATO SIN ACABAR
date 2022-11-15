@@ -1,14 +1,14 @@
 while True:
-    carrera=input("Dime las tres asignaturas que vas a cursar --> ")
+    carrera=input("Dime las tres carreras a cursar --> ")
     juntoc = carrera.split(" ")
     primerac, segundac, tercerac = juntoc
     
    # n1=int(input("Dime tu nota en "+primera+" --> "))
     print("Dime las cuatro notas de la EVAU de inglés, lengua, historia y mates")
-    ingles=input("Ingles --> ")
-    lengua=input("Lengua --> ")
-    historia=input("Historia --> ")
-    mates=input("Mates --> ")
+    ingles=int(input("Ingles --> "))
+    lengua=int(input("Lengua --> "))
+    historia=int(input("Historia --> "))
+    mates=int(input("Mates --> "))
 
     if ingles<4:
         ingles=0
@@ -18,3 +18,11 @@ while True:
         historia=0        
     if mates<4:
         mates=0
+    NMB=int(input("Cuál es tu media en Bachillerato --> "))
+    NME=((ingles+lengua+historia+mates)/4)
+    NA = (0.4 * NME) + (0.6 * NMB)
+        if NA<5:
+            print("SUSPENSO")
+            break
+        else:
+            print("Tu nota de acceso es ", NA)
