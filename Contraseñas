@@ -1,0 +1,24 @@
+alo="cc"
+for cosa in alo:
+    C=input("Dime una contraseña -->")
+    if(len(C)<5):
+        print("Tu contraseña es muy corta, mejórala")
+        break
+    if(len(C)>10):
+        print("Tu contraseña es bastante larga, ten cuidado de que no te acuerdes de ella")
+    M=False
+    for mayus in C:
+        if mayus.isupper()==True:
+            M=True
+    if not M:
+        print("La contraseña debe contener al menos 1 mayúscula")
+        n=False
+        for caracter in C:
+            if caracter.isdigit()==True:
+                n=True
+        if not n:
+            print("La contraseña debería de tener como mínimo 1 número, mejórala")
+            break
+        else:
+            print("La contraseña no está mal :)")
+            break
